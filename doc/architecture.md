@@ -2,24 +2,24 @@
 
 - **component TodoList**
 
-  - <span style="color:blue">function</span> addTask
-  - <span style="color:blue">function</span> editTask
-  - <span style="color:blue">function</span> checkTask
-  - <span style="color:blue">function</span> deleteTask
+  - _function_ addTask
+  - _function_ editTask
+  - _function_ checkTask
+  - _function_ deleteTask
 
-  - <span style="color:green">state:</span> todoList: [TodoItem]
+  - _state:_ todoList: [TodoItem]
 
   - **component NewTaskForm**
 
-    - <span style="color:green">state:</span> newTaskTitle
-    - <span style="color:orange">props:</span> id~~, title~~
+    - _state:_ newTaskTitle
+    - _props:_ id, ~~title~~
 
   - **component TodoItem**
 
-    - <span style="color:green">state:</span> editMode: true/false
-    - <span style="color:orange">props:</span> id, title
+    - _state:_ editMode: true/false
+    - _props:_ id, title
 
     - **component Button**
-      - <span style="color:orange">props:</span> icon
+      - _props:_ icon
 
 Still to be checked: what to do with the handlers.
