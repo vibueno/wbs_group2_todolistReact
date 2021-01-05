@@ -30,7 +30,7 @@ This project has been developed using [ReactJS](https://reactjs.org/).
 
 ### Architecture
 
-You can see the architecture of the application [here](./doc/architecture.md)
+You can see the architecture of the application [here](./doc/architecture.md).
 
 ### Guidelines
 
@@ -43,3 +43,5 @@ These validators, even if not 100% up-to-date with the newest standards, still h
 
 - [HTML (W3C)](https://validator.w3.org)
 - [CSS (W3C)](https://jigsaw.w3.org/css-validator)
+
+They may exist as packages for your code editor.

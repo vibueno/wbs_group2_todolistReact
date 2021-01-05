@@ -1,5 +1,7 @@
 # Architecture
 
+## Components
+
 **component TodoList**
 
 - _function_ addTask
@@ -23,7 +25,7 @@
   - **component TaskButton**
     - _props:_ icon
 
-Pending:
+## Pending issues
 
 - How to manage event handlers
 - Where to store addTask, editTask, checkTask, deleteTask:
