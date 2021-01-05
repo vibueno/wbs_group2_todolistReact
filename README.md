@@ -30,10 +30,7 @@ This project has been developed using [ReactJS](https://reactjs.org/).
 
 ### Architecture
 
-The application has two components:
-
-- **Task**
-- **Tasklist**
+You can see the architecture of the application [here](./doc/architecture.md)
 
 ### Guidelines
 
