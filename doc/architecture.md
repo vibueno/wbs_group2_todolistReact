@@ -17,12 +17,12 @@
 - **component NewTaskForm**
 
   - _state:_ newTaskTitle
-  - _props:_ id, addTaskHandler
+  - _props:_ id, addTaskHandler=addTask
 
 - **component TodoTask**
 
   - _state:_ editMode: boolean
-  - _props:_ id, title, checkTaskHandler, deleteTaskHandler, editTaskHandler
+  - _props:_ id, title, checkTaskHandler=checkTask, deleteTaskHandler=deleteTask, editTaskHandler=editTask
 
   - **component TaskButton**
     - _props:_ icon, onClick
