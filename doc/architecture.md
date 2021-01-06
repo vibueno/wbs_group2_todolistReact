@@ -15,7 +15,7 @@
 - **component NewTaskForm**
 
   - _state:_ newTaskTitle
-  - _props:_ id, ~~title~~
+  - _props:_ id, addTaskHandler
 
 - **component TodoTask**
 
