@@ -20,10 +20,10 @@
 - **component TodoTask**
 
   - _state:_ editMode: boolean
-  - _props:_ id, title
+  - _props:_ id, title, checkTaskHandler, deleteTaskHandler, editTaskHandler
 
   - **component TaskButton**
-    - _props:_ icon
+    - _props:_ icon, onClick
 
 ## Pending issues
 
