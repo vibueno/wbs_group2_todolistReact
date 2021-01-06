@@ -40,7 +40,7 @@ You can see the architecture of the application [here](./doc/architecture.md).
 
 ### Helpers
 
-- [Prettier](https://prettier.io/): the file _.prettierrc.json_ in the root folder of the project makes sure everyone uses the same code formatter settings. You need to [install Prettier](https://prettier.io/docs/en/editors.html) for your code editor. Prettier can run 'on file save', so that you don't need to run it manually. Look for instructions on how to set it up in your code editor.
+- [Prettier](https://prettier.io/): [install Prettier](https://prettier.io/docs/en/editors.html) for your code editor. Prettier can run 'on file save', so that you don't need to run it manually. Look for instructions on how to set it up in your code editor, if needed.
 
 ### Validators
 
