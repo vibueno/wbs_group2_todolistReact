@@ -17,13 +17,13 @@ export function TodoList({ tasks }) {
             <p>What are you NOT doing today:</p>
             {/*<NewTaskForm addTaskHandler={addTask} />*/}
             <p>Things not to do:</p>
-            <ul>
+            <ul id="task-list">
                 {taskList.map((task) => (
                     <TodoTask
                         key={task.id}
                         id={task.id}
                         title={task.title}
-                        onDelete={deleteTask}
+                        onDelete={onDelete}
                     />
                 ))}
             </ul>
