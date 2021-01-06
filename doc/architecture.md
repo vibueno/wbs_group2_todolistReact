@@ -4,22 +4,22 @@
 
 **component TodoList**
 
-- _function_ addTask
-- _function_ editTask
-- _function_ checkTask
-- _function_ deleteTask
+- _function_ addTask(title)  _// add a new taks to todoList with the specified title_  
+- _function_ editTask(id, newTitle) _// set the title of the task with the specified id to newTitle_
+- _function_ checkTask(id) _// toggle the checked property of the task with the specified id_
+- _function_ deleteTask(id) _// delete the task with the specified id_
 
-- _state:_ todoList: [TodoItem]
-- _state:_ nextId: Number
+- _state:_ taskList: [task: {id: String, title: String, checked: boolean}] _// List of the Todo tasks_
+- _state:_ nextId: Number 
 
 - **component NewTaskForm**
 
   - _state:_ newTaskTitle
   - _props:_ id, ~~title~~
 
-- **component TodoItem**
+- **component TodoTask**
 
-  - _state:_ editMode: true/false
+  - _state:_ editMode: boolean
   - _props:_ id, title
 
   - **component TaskButton**
