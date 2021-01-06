@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css' ;
 
 
 export default function ToDoTask({title, id}) {
@@ -8,10 +9,11 @@ export default function ToDoTask({title, id}) {
 
     return (
 
-            <div className="div-task" id={id}>
-                <p>{title}</p>
-                <button>Delete</button>
-                <button>Edit</button>
-            </div>
+            <li  id={id}>
+
+                <input className="text" value={title} />
+                <span className="bttn delete"></span>
+                <span className="bttn edit"></span>
+            </li>
     );
   }

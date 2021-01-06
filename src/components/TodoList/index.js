@@ -23,7 +23,7 @@ export function TodoList({ tasks }) {
                         key={task.id}
                         id={task.id}
                         title={task.title}
-                        onDelete={onDelete}
+                        onDelete={deleteTask}
                     />
                 ))}
             </ul>
