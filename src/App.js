@@ -9,7 +9,7 @@ const defaultTasks = [
 ]
 export default function App() {
   return (
-    <div class="main">
+        <div className="main">
           <h1>
               <span>NOT</span>
               <span>todo</span>
@@ -26,11 +26,11 @@ export default function App() {
                   list.
               </li>
           </ol>
-          <TodoList tasks={defaultTasks}/>
-          <i class="license">
+          <TodoList tasks={defaultTasks}  />
+          <i className="license">
               icons by fontawesome -{" "}
               <a href="https://fontawesome.com/license">license</a>
           </i>
-    </div>
+        </div>
   );
 }
