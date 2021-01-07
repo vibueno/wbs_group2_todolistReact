@@ -12,6 +12,10 @@ export function TodoList({ tasks }) {
     const checkTask = (id) => {
         console.log(id + " checked (mock)");
     };
+
+    const editTask = () => {
+        console.log('test');
+    }
     return (
         <div>
             <p>What are you NOT doing today:</p>
@@ -24,6 +28,7 @@ export function TodoList({ tasks }) {
                         id={task.id}
                         title={task.title}
                         onDelete={deleteTask}
+                        onEdit={editTask}
                     />
                 ))}
             </ul>
