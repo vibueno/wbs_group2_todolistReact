@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import TodoTask from "../TodoTask";
+import { nanoid } from "nanoid";
 
 export function TodoList({ tasks }) {
     const [taskList, setTaskList] = useState(tasks);
     const deleteTask = (id) => {
         console.log(id + " deleted(mock)");
     };
-    const addTask = (title, id) => {
+    const addTask = (title) => {
+        const id = "LI-" + nanoid(10);
         console.log(`added new task with title:${title} and id:${id}`);
     };
     const checkTask = (id) => {
