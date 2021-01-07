@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import TodoTask from "../todotask";
+import TodoTask from "../TodoTask";
 
 export function TodoList({ tasks }) {
     const [taskList, setTaskList] = useState(tasks);
@@ -13,9 +13,7 @@ export function TodoList({ tasks }) {
         console.log(id + " checked (mock)");
     };
 
-    const editTask = () => {
-        console.log('test');
-    }
+
     return (
         <div>
             <p>What are you NOT doing today:</p>
@@ -28,7 +26,6 @@ export function TodoList({ tasks }) {
                         id={task.id}
                         title={task.title}
                         onDelete={deleteTask}
-                        onEdit={editTask}
                     />
                 ))}
             </ul>
