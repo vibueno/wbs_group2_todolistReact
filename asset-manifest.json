@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/TodoList_React/static/css/main.25af3ec6.chunk.css",
-    "main.js": "/TodoList_React/static/js/main.22eccc50.chunk.js",
-    "main.js.map": "/TodoList_React/static/js/main.22eccc50.chunk.js.map",
+    "main.css": "/TodoList_React/static/css/main.444fc81e.chunk.css",
+    "main.js": "/TodoList_React/static/js/main.5cbc3f05.chunk.js",
+    "main.js.map": "/TodoList_React/static/js/main.5cbc3f05.chunk.js.map",
     "runtime-main.js": "/TodoList_React/static/js/runtime-main.4aee530f.js",
     "runtime-main.js.map": "/TodoList_React/static/js/runtime-main.4aee530f.js.map",
     "static/js/2.f2c3e48f.chunk.js": "/TodoList_React/static/js/2.f2c3e48f.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.97223939.chunk.js": "/TodoList_React/static/js/3.97223939.chunk.js",
     "static/js/3.97223939.chunk.js.map": "/TodoList_React/static/js/3.97223939.chunk.js.map",
     "index.html": "/TodoList_React/index.html",
-    "static/css/main.25af3ec6.chunk.css.map": "/TodoList_React/static/css/main.25af3ec6.chunk.css.map",
+    "static/css/main.444fc81e.chunk.css.map": "/TodoList_React/static/css/main.444fc81e.chunk.css.map",
     "static/js/2.f2c3e48f.chunk.js.LICENSE.txt": "/TodoList_React/static/js/2.f2c3e48f.chunk.js.LICENSE.txt",
     "static/media/styles.css": "/TodoList_React/static/media/trash-solid.8b6b7284.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4aee530f.js",
     "static/js/2.f2c3e48f.chunk.js",
-    "static/css/main.25af3ec6.chunk.css",
-    "static/js/main.22eccc50.chunk.js"
+    "static/css/main.444fc81e.chunk.css",
+    "static/js/main.5cbc3f05.chunk.js"
   ]
 }
