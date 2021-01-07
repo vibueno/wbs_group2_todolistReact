@@ -1,6 +1,6 @@
 import './App.css';
 import { TodoList } from './components/TodoList';
-import ToDoTask from "./components/todotask";
+
 
 const defaultTasks = [
   {id:"1",title:"test1",checked:false},
@@ -25,12 +25,12 @@ export default function App() {
                   If you successfully avoided doing said thing, cross it of your
                   list.
               </li>
-          </ol>  
+          </ol>
           <TodoList tasks={defaultTasks}/>
           <i class="license">
               icons by fontawesome -{" "}
               <a href="https://fontawesome.com/license">license</a>
           </i>
-    </div>       
+    </div>
   );
 }
