@@ -9,7 +9,11 @@ export function TodoList({ tasks }) {
     };
     const addTask = (title) => {
         const id = "LI-" + nanoid(10);
-        console.log(`added new task with title:${title} and id:${id}`);
+        const newTaskList = [
+            { id: id, title: title, checked: false },
+            ...taskList,
+        ];
+        setTaskList(newTaskList);
     };
     const checkTask = (id) => {
         console.log(id + " checked (mock)");
