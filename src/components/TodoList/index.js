@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import TodoTask from "../TodoTask";
+import NewTaskForm from "../NewTaskForm";
 import { nanoid } from "nanoid";
 
 export function TodoList({ tasks }) {
@@ -23,7 +24,7 @@ export function TodoList({ tasks }) {
     return (
         <div>
             <p>What are you NOT doing today:</p>
-            {/*<NewTaskForm addTaskHandler={addTask} />*/}
+            <NewTaskForm addTaskHandler={addTask} />
             <p>Things not to do:</p>
             <ul id="task-list">
                 {taskList.map((task) => (
