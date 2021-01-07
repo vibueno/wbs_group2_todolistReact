@@ -37,6 +37,11 @@ You can see the architecture of the application [here](./doc/architecture.md).
 - [CSS Rule order](https://9elements.com/css-rule-order)
 - [Git set-up and workflow](./doc/git.md)
 
+
+### Helpers
+
+- [Prettier](https://prettier.io/): [install Prettier](https://prettier.io/docs/en/editors.html) for your code editor. Prettier can run 'on file save', so that you don't need to run it manually. Look for instructions on how to set it up in your code editor, if needed.
+
 ### Validators
 
 These validators, even if not 100% up-to-date with the newest standards, still help in most cases:
