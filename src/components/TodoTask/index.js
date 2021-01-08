@@ -1,19 +1,22 @@
 import React, { useState } from "react";
 import "./styles.css";
 
-export default function TodoTask({ title, id, checked, deleteTaskHandler, editTaskHandler, checkTaskHandler}) {
-
+export default function TodoTask({
+  title,
+  id,
+  checked,
+  deleteTaskHandler,
+  editTaskHandler,
+  checkTaskHandler,
+}) {
   const [inputValue, setInputValue] = useState(title);
   const [editMode, setEditMode] = useState(false);
-
-
-
 
   return (
     <li
       id={id}
       className={`task ${checked ? "checked" : ""} ${
-            editMode ? "editMode" : ""
+        editMode ? "editMode" : ""
       }`}
       onClick={(e) => {
         if (!editMode && !e.target.classList.contains("bttn")) {
@@ -24,13 +27,16 @@ export default function TodoTask({ title, id, checked, deleteTaskHandler, editTa
       {!editMode ? (
         <>
           <span className="text">{title}</span>
-          <span className="bttn edit" onClick={() => setEditMode(true)}></span>
-          <span
+          <button
+            className="bttn edit"
+            onClick={() => setEditMode(true)}
+          ></button>
+          <button
             className="bttn delete"
             onClick={() => {
               deleteTaskHandler();
             }}
-          ></span>
+          ></button>
         </>
       ) : (
         <>
@@ -39,17 +45,17 @@ export default function TodoTask({ title, id, checked, deleteTaskHandler, editTa
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
           />
-          <span
+          <button
             className="bttn confirm"
             onClick={() => {
               editTaskHandler(inputValue);
               setEditMode(false);
             }}
-          ></span>
-          <span
+          ></button>
+          <button
             className="bttn abort"
             onClick={() => setEditMode(false)}
-          ></span>
+          ></button>
         </>
       )}
     </li>
