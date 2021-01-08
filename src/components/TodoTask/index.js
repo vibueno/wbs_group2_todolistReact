@@ -10,20 +10,21 @@ export default function TodoTask({ title, id, checked, deleteTaskHandler, editTa
 
 
   return (
-    <li id={id} className={checked ? "checked" : ""} onClick={(e)=>{
-      if(!editMode && !e.target.classList.contains("bttn")) {
-        console.log(id);
-        checkTaskHandler();
-      }
-    }}>
-      
+    <li
+      id={id}
+      className={`task ${checked ? "checked" : ""} ${
+            editMode ? "editMode" : ""
+      }`}
+      onClick={(e) => {
+        if (!editMode && !e.target.classList.contains("bttn")) {
+          checkTaskHandler();
+        }
+      }}
+    >
       {!editMode ? (
         <>
           <span className="text">{title}</span>
-          <span
-            className="bttn edit"
-            onClick={() => setEditMode(true)}
-          ></span>
+          <span className="bttn edit" onClick={() => setEditMode(true)}></span>
           <span
             className="bttn delete"
             onClick={() => {
@@ -33,7 +34,11 @@ export default function TodoTask({ title, id, checked, deleteTaskHandler, editTa
         </>
       ) : (
         <>
-          <input className="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+          <input
+            className="text"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+          />
           <span
             className="bttn confirm"
             onClick={() => {
@@ -46,7 +51,6 @@ export default function TodoTask({ title, id, checked, deleteTaskHandler, editTa
             onClick={() => setEditMode(false)}
           ></span>
         </>
-        
       )}
     </li>
   );
