@@ -19,7 +19,7 @@
   border: unset;
   margin: 0 1em;
   background: unset;
-  font-size: inherit;
+  font-size: 0.8em;
   font-family: inherit;
 }
 .inputArea input:focus {
@@ -45,13 +45,9 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-input.text {
-  align-self: center;
-  margin: 0em 1em;
-  border: unset;
-  border-bottom: solid rgb(143, 134, 134) 1px;
-  padding: 0;
-  background: unset;
-  font-size: inherit;
-  font-family: inherit;
+/* responsive Styling for Mobile devices*/
+@media only screen and (min-width: 450px) {
+  .inputArea input {
+    font-size: 1em;
+  }
 }

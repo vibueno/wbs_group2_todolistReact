@@ -22,8 +22,9 @@ export default function NewTaskForm({ addTaskHandler }) {
         <input
           type="text"
           value={newTaskTitle}
+          maxlength="40"
           onChange={(e) => setNewTaskTitle(e.target.value)}
-          placeholder="Your no-Task here"
+          placeholder="Your no-task here"
         />
 
         <button type="submit" disabled={newTaskTitle === ""}>
