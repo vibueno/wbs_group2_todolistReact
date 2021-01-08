@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./styles.css";
 import TodoTask from "../TodoTask";
 import NewTaskForm from "../NewTaskForm";
 import { nanoid } from "nanoid";
@@ -40,7 +41,7 @@ export function TodoList({ tasks }) {
             key={task.id}
             id={task.id}
             title={task.title}
-            checked = {task.checked}
+            checked={task.checked}
             deleteTaskHandler={() => {
               deleteTask(task.id);
             }}
