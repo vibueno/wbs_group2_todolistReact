@@ -18,8 +18,15 @@ export function TodoList({ tasks }) {
     setTaskList(newTaskList);
   };
 
+  const editTask = (id, newTitle) => {
+    const index = taskList.findIndex((task) => task.id === id);
+    taskList[index].title = newTitle;
+    setTaskList([...taskList]);
+  };
   const checkTask = (id) => {
-    console.log(id + " checked (mock)");
+    const index = taskList.findIndex((task) => task.id === id);
+    taskList[index].checked = !taskList[index].checked;
+    setTaskList([...taskList]);
   };
 
   return (
@@ -33,8 +40,15 @@ export function TodoList({ tasks }) {
             key={task.id}
             id={task.id}
             title={task.title}
+            checked = {task.checked}
             deleteTaskHandler={() => {
               deleteTask(task.id);
+            }}
+            editTaskHandler={(title) => {
+              editTask(task.id, title);
+            }}
+            checkTaskHandler={() => {
+              checkTask(task.id);
             }}
           />
         ))}
