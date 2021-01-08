@@ -24,16 +24,12 @@
   - _state:_ editMode: boolean
   - _props:_ id, title, checkTaskHandler=checkTask, deleteTaskHandler=deleteTask, editTaskHandler=editTask
 
-  - **component TaskButton**
-    - _props:_ icon, onClick
+  - **~~component TaskButton~~**
 
 ## Pending issues
 
-- How to manage event handlers
 - Where to store addTask, editTask, checkTask, deleteTask:
 
   - In the component TodoList, as described above
   - In a separate js file in the src folder
-  - Inside a separate js file for each component
-
-    Not sure if all these approaches are valid. What seems clear right now is that they will be imported into the TodoList component if they are stored in a different file
+  - ~~Inside a separate js file for each component~~
