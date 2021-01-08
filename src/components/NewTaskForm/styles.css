@@ -15,12 +15,12 @@
 }
 .inputArea input {
   flex-grow: 1;
+  overflow: hidden;
   border: unset;
   margin: 0 1em;
   background: unset;
   font-size: inherit;
   font-family: inherit;
-  overflow: hidden;
 }
 .inputArea input:focus {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);

@@ -1,7 +1,7 @@
 .task {
+  list-style-type: none;
   display: flex;
   align-items: stretch;
-  list-style-type: none;
   transition: 0.2s;
   margin-top: 1em;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -15,31 +15,32 @@
 }
 
 .task:hover {
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 14px 28px, rgba(0, 0, 0, 0.5) 0px 5px 5px;
   transition: all 0.25s;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 14px 28px, rgba(0, 0, 0, 0.5) 0px 5px 5px;
 }
 
 .text {
-  padding: 0em 1em;
   flex-grow: 1;
-  cursor: pointer;
-  display: flex;
   align-items: center;
+  display: flex;
+  padding: 0em 1em;
+  cursor: pointer;
 }
 
 input.text {
+  align-self: center;
+  overflow: hidden;
+  border: unset;
+  margin: 0em 1em;
+  border-bottom: solid rgb(143, 134, 134) 1px;
+  padding: 0;
+  background: unset;
   font-size: inherit;
   font-family: inherit;
-  border: unset;
-  background: unset;
-  align-self: center;
-  margin: 0em 1em;
-  padding: 0;
-  border-bottom: solid rgb(143, 134, 134) 1px;
-  overflow: hidden;
 }
 
 .bttn {
+  flex-shrink: 0;
   border: none;
   width: 4em;
   height: 100%;
@@ -48,7 +49,6 @@ input.text {
   background-repeat: no-repeat;
   background-color: unset;
   cursor: pointer;
-  flex-shrink: 0;
 }
 
 .bttn:focus {
@@ -59,16 +59,16 @@ input.text {
   background-image: url(../../img/check-solid.svg);
 }
 .abort {
+  border-radius: 0 6px 6px 0;
   background-image: url(../../img/times-solid.svg);
   background-size: 1.1em;
-  border-radius: 0 6px 6px 0;
 }
 .edit {
   background-image: url(../../img/pen-solid.svg);
 }
 .delete {
-  background-image: url(../../img/trash-solid.svg);
   border-radius: 0 6px 6px 0;
+  background-image: url(../../img/trash-solid.svg);
   background-size: 1.1em;
 }
 .bttn:hover {
@@ -76,14 +76,14 @@ input.text {
 }
 
 .task.checked {
-  background-color: rgba(125, 77, 77, 0.5);
   padding: 0 0 0 40px;
+  background-color: rgba(125, 77, 77, 0.5);
 }
 
 .task.checked > .text {
-  text-decoration: line-through;
-  font-style: italic;
   opacity: 0.7;
+  font-style: italic;
+  text-decoration: line-through;
 }
 
 .task.checked > .edit {
