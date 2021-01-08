@@ -23,8 +23,11 @@
   flex-grow: 1;
   align-items: center;
   display: flex;
+  overflow: hidden;
   padding: 0em 1em;
   cursor: pointer;
+  font-size: 0.8em;
+  line-height: 1.5em;
 }
 
 input.text {
@@ -92,4 +95,11 @@ input.text {
 
 .task.editMode {
   border: 1px solid black;
+}
+
+/* responsive Styling for Mobile devices*/
+@media only screen and (min-width: 450px) {
+  .text {
+    font-size: 1em;
+  }
 }
