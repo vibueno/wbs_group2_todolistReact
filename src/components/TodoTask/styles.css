@@ -1,22 +1,19 @@
-#task-list {
-  padding: 0;
-}
-
 .task {
-  height: 3em;
-  margin-top: 1em;
-  background-color: var(--colorWhite);
-  border-radius: 6px;
-  list-style-type: none;
-  font-size: 18px;
-  transition: 0.2s;
   display: flex;
   align-items: stretch;
+  list-style-type: none;
+  transition: 0.2s;
+  margin-top: 1em;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
+  height: 3em;
+  border-radius: 6px;
+  background-color: var(--colorWhite);
+  font-size: 18px;
 }
+
 .task:hover {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 14px 28px, rgba(0, 0, 0, 0.5) 0px 5px 5px;
   transition: all 0.25s;
@@ -30,10 +27,6 @@
   align-items: center;
 }
 
-/*.checked .text {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" enable-background="new 0 0 512 512" xml:space="preserve" viewBox="0 0 24 24"><path style="fill: green"  d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>' ), auto;
-  }*/
-
 input.text {
   font-size: inherit;
   font-family: inherit;
@@ -44,6 +37,7 @@ input.text {
   padding: 0;
   border-bottom: solid rgb(143, 134, 134) 1px;
 }
+
 .bttn {
   border: none;
   width: 4em;
