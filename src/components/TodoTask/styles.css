@@ -36,6 +36,7 @@ input.text {
   margin: 0em 1em;
   padding: 0;
   border-bottom: solid rgb(143, 134, 134) 1px;
+  overflow: hidden;
 }
 
 .bttn {
