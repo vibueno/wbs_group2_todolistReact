@@ -23,7 +23,7 @@ export default function NewTaskForm({ addTaskHandler }) {
           type="text"
           value={newTaskTitle}
           onChange={(e) => setNewTaskTitle(e.target.value)}
-          placeholder="Write down a Task only if it is to do a Cocktail to Elie => the Teacher of Georg, Victor and Aria "
+          placeholder="Your no-Task here"
         />
 
         <button type="submit" disabled={newTaskTitle === ""}>
