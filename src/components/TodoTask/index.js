@@ -43,6 +43,7 @@ export default function TodoTask({
           <input
             className="text"
             value={inputValue}
+            autoFocus
             onChange={(e) => setInputValue(e.target.value)}
           />
           <button

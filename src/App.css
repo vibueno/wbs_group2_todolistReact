@@ -16,12 +16,9 @@
 "Roboto slab" is for Bold 700 and Regular 400
 */
 
-html {
+.main {
   font-size: 16px;
   font-family: var(--font_Roboto);
-}
-
-.main {
   margin: 2em auto;
   padding: 2em 9em;
   max-width: 50rem;
@@ -53,6 +50,7 @@ h1 > span:nth-child(2) {
   padding: 0;
   max-width: 380px;
   font-size: 0.9rem;
+  line-height: 1.5em;
   color: var(--colorWhite);
 }
 
