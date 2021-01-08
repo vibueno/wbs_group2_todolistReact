@@ -91,3 +91,7 @@
   .task.checked > .edit {
     display: none;
   }
+
+  .task.editMode {
+    border: 1px solid black;
+  }
