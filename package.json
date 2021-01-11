@@ -2,7 +2,7 @@
   "name": "react-todolist",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Elie-Soued.github.io/TodoList_React/",
+  "homepage": "https://vibueno.github.io/wbs_group2_todolistReact/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
