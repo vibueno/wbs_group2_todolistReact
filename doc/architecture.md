@@ -25,11 +25,3 @@
   - _props:_ id, title, checkTaskHandler=checkTask, deleteTaskHandler=deleteTask, editTaskHandler=editTask
 
   - **~~component TaskButton~~**
-
-## Pending issues
-
-- Where to store addTask, editTask, checkTask, deleteTask:
-
-  - In the component TodoList, as described above
-  - In a separate js file in the src folder
-  - ~~Inside a separate js file for each component~~
